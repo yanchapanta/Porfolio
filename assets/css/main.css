@@ -1,0 +1,113 @@
+@media only screen and (min-width: 37.5em) {
+  .merryBody2-xxl {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .firaH3-xxl {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+  }
+
+  .marryH5-xxl {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+main {
+  min-height: 24.5rem;
+  background-image: url("../image/hi/forma7.svg"), url("../image/hi/home.svg");
+  background-size: 100%, 100%;
+  background-position: center 40%, center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media only screen and (min-width: 18.75em) {
+  main {
+    background-position: center 94%, center;
+  }
+}
+@media only screen and (min-width: 500px) {
+  main {
+    background-position: center 98%, center;
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  main {
+    min-height: 32.5rem;
+    background-position: center 98%, center;
+  }
+}
+@media only screen and (min-width: 800px) {
+  main {
+    min-height: 36.5rem;
+    background-position: center 98%, center;
+  }
+}
+@media only screen and (min-width: 64em) {
+  main {
+    min-height: 35rem;
+    background-image: url("../image/hi/forma-desktop.svg"), url("../image/hi/home.svg");
+    background-position: center 97%, center;
+  }
+}
+
+main > div {
+  max-width: 44rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 2rem;
+}
+@media only screen and (min-width: 18.75em) {
+  main > div {
+    margin-top: -6rem;
+  }
+}
+
+.hi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+.hi hgroup {
+  text-align: center;
+  color: var(--white);
+}
+.hi hgroup h1,
+.hi hgroup h2 {
+  color: var(--white-color);
+}
+.hi p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

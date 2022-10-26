@@ -1,0 +1,77 @@
+.modal-preview {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #0008;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	opacity: 0;
+	z-index: 997;
+	pointer-events: none;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+.modal-preview-container {
+	position: relative;
+	width: 70%;
+	height: 70vh;
+	display: grid;
+	padding: 0.5rem;
+	grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
+	background-color: white;
+	border: thick double var(--second-color);
+	border-radius: 0.5rem;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.modal-preview-close {
+	width: 3rem;
+	height: 3rem;
+
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: inline-flex;
+	justify-content: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border: thick double var(--youtube-color);
+	border-radius: 50%;
+	color: var(--youtube-color);
+	font-size: 2rem;
+	text-align: center;
+	-webkit-transition: -webkit-transform 0.3s linear;
+	transition: -webkit-transform 0.3s linear;
+	-o-transition: transform 0.3s linear;
+	transition: transform 0.3s linear;
+	transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+.modal-preview-close:hover {
+	-webkit-transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+	background-color: rgb(3, 73, 3);
+	border: thick double white;
+	color: white;
+}
+
+/* FUNCIONAMIENTO */
+.modal-preview:target {
+	opacity: 1;
+	pointer-events: auto;
+}

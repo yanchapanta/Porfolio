@@ -1,0 +1,81 @@
+@mixin phone {
+	@media only screen and (min-width: #{$phone}) {
+		@content;
+	}
+}
+@mixin phonev1 {
+	@media only screen and (min-width: #{$phonev1}) {
+		@content;
+	}
+}
+@mixin phonev2 {
+	@media only screen and (min-width: #{$phonev2}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media only screen and (min-width: #{$tablet}) {
+		@content;
+	}
+}
+@mixin tabletv1 {
+	@media only screen and (min-width: #{$tsabletv1}) {
+		@content;
+	}
+}
+@mixin tabletv2 {
+	@media only screen and (min-width: #{$tabletv2}) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media only screen and (min-width: #{$desktop}) {
+		@content;
+	}
+}
+@mixin boton-color($grd1, $grd2, $grd3, $grd4) {
+	background: -webkit-gradient(
+		linear,
+		right top,
+		left top,
+		color-stop(-0.05%, $grd1),
+		color-stop(37.47%, $grd2),
+		color-stop(57.27%, $grd3),
+		to($grd4)
+	);
+	background: -o-linear-gradient(
+		right,
+		$grd1 -0.05%,
+		$grd2 37.47%,
+		$grd3 57.27%,
+		$grd4 100%
+	);
+	background: linear-gradient(
+		270deg,
+		$grd1 -0.05%,
+		$grd2 37.47%,
+		$grd3 57.27%,
+		$grd4 100%
+	);
+}
+@mixin icon($image, $bottom, $right) {
+	position: fixed;
+	bottom: $bottom;
+	right: $right;
+	z-index: 998;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 0.3rem;
+	background-image: url($image);
+	background-repeat: no-repeat;
+
+	-webkit-transform-origin: center center;
+
+	-ms-transform-origin: center center;
+
+	transform-origin: center center;
+	-webkit-transition: background-image 0.3s ease;
+	-o-transition: background-image 0.3s ease;
+	transition: background-image 0.3s ease;
+}

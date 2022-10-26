@@ -1,0 +1,29 @@
+@include desktop() {
+	.Horder3 {
+		grid-area: Horder3;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: end;
+		padding-left: 0.3rem;
+	}
+	.Horder2 {
+		grid-area: Horder2;
+		width: 100%;
+	}
+	.Horder1 {
+		
+		grid-area: Horder1;
+	}
+	.Horder4 {
+		grid-area: Horder4;
+	}
+	.Header {
+		padding: 0 1rem;
+		display: grid;
+		background: var(--second-color);
+		grid-template: 'Horder1 Horder2 Horder3 Horder4' auto/23% 50% 24% 3%;
+	}
+}

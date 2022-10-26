@@ -1,0 +1,11 @@
+.footer {
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--second-color);
+}
+.footer a {
+  color: var(--first-color);
+}
+
+/*# sourceMappingURL=footer.css.map */

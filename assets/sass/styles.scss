@@ -1,0 +1,18 @@
+@import 'values';
+
+@import 'mixins';
+@import 'general';
+@import 'header.scss';
+@import 'headerMenu.scss';
+@import 'gridDivision';
+@import 'main.scss';
+@import 'work.scss';
+@import 'modal';
+@import 'testimonial.scss';
+@import 'contact.scss';
+@import 'footer.scss';
+
+
+
+// voy a mi assets
+//sass --watch sass:css

@@ -1,0 +1,110 @@
+@import 'values';
+@import 'mixins';
+@include tablet() {
+	.merryBody2-xxl {
+		font-size: 18px;
+	}
+}
+@include desktop() {
+	.firaH3-xxl {
+		font-weight: 600;
+		font-size: 60px;
+		line-height: 72px;
+	}
+	.marryH5-xxl {
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+
+main {
+	min-height: 24.5rem;
+	background-image: url('../image/hi/forma7.svg'), url('../image/hi/home.svg');
+	background-size: 100%, 100%;
+	background-position: center 40%, center;
+
+	background-repeat: no-repeat;
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	@include phone() {
+		background-position: center 94%, center;
+	}
+	@include phonev2() {
+		background-position: center 98%, center;
+	}
+	@include tablet() {
+		min-height: 32.5rem;
+		background-position: center 98%, center;
+	}
+	@include tabletv2() {
+		min-height: 36.5rem;
+		background-position: center 98%, center;
+	}
+	@include desktop() {
+		min-height: 35rem;
+		background-image: url('../image/hi/forma-desktop.svg'),
+			url('../image/hi/home.svg');
+		background-position: center 97%, center;
+	}
+}
+
+main > div {
+	max-width: 44rem;
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	gap: 2rem;
+	padding: 2rem;
+
+	@include phone() {
+		margin-top: -6rem;
+	}
+}
+
+.hi {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 1rem;
+	hgroup {
+		text-align: center;
+		color: var(--white);
+		h1,
+		h2 {
+			color: var(--white-color);
+		}
+	}
+	p {
+		text-align: center;
+	}
+}
